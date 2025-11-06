@@ -78,7 +78,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>SoftFX.$(ProjectName).$(PlatformTarget)</TargetName>
+    <TargetName>FDK.$(ProjectName).$(PlatformTarget)</TargetName>
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir>$(Configuration).$(PlatformTarget)\</IntDir>
     <TargetExt>.dll</TargetExt>
@@ -87,12 +87,12 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir>$(Configuration).$(PlatformTarget)\</IntDir>
-    <TargetName>SoftFX.$(ProjectName).$(PlatformTarget)</TargetName>
+    <TargetName>FDK.$(ProjectName).$(PlatformTarget)</TargetName>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <TargetName>SoftFX.$(ProjectName).$(PlatformTarget)</TargetName>
+    <TargetName>FDK.$(ProjectName).$(PlatformTarget)</TargetName>
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir>$(Configuration).$(PlatformTarget)\</IntDir>
     <TargetExt>.dll</TargetExt>
@@ -101,7 +101,7 @@
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir>$(Configuration).$(PlatformTarget)\</IntDir>
-    <TargetName>SoftFX.$(ProjectName).$(PlatformTarget)</TargetName>
+    <TargetName>FDK.$(ProjectName).$(PlatformTarget)</TargetName>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">

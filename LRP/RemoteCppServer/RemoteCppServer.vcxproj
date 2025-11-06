@@ -217,7 +217,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>SoftFX.Lrp.x86.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>FDK.Lrp.x86.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\lib\</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
@@ -238,7 +238,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>SoftFX.Lrp.x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>FDK.Lrp.x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\lib\</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>

@@ -71,25 +71,25 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir>$(Configuration).$(PlatformTarget)\</IntDir>
-    <TargetName>SoftFX.$(ProjectName).$(PlatformTarget)</TargetName>
+    <TargetName>FDK.$(ProjectName).$(PlatformTarget)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir>$(Configuration).$(PlatformTarget)\</IntDir>
-    <TargetName>SoftFX.$(ProjectName).$(PlatformTarget)</TargetName>
+    <TargetName>FDK.$(ProjectName).$(PlatformTarget)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir>$(Configuration).$(PlatformTarget)\</IntDir>
-    <TargetName>SoftFX.$(ProjectName).$(PlatformTarget)</TargetName>
+    <TargetName>FDK.$(ProjectName).$(PlatformTarget)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir>$(Configuration).$(PlatformTarget)\</IntDir>
-    <TargetName>SoftFX.$(ProjectName).$(PlatformTarget)</TargetName>
+    <TargetName>FDK.$(ProjectName).$(PlatformTarget)</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

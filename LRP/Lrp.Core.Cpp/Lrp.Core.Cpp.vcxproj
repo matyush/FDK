@@ -70,23 +70,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>SoftFX.Lrp.x86</TargetName>
+    <TargetName>FDK.Lrp.$(PlatformTarget)</TargetName>
     <IntDir>$(Configuration).x86\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <TargetName>SoftFX.Lrp.x64</TargetName>
+    <TargetName>FDK.Lrp.$(PlatformTarget)</TargetName>
     <OutDir>$(SolutionDir)\$(Configuration)\</OutDir>
     <IntDir>$(Configuration).x64\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <TargetName>SoftFX.Lrp.x86</TargetName>
+    <TargetName>FDK.Lrp.$(PlatformTarget)</TargetName>
     <IntDir>$(Configuration).x86\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <TargetName>SoftFX.Lrp.x64</TargetName>
+    <TargetName>FDK.Lrp.$(PlatformTarget)</TargetName>
     <OutDir>$(SolutionDir)\$(Configuration)\</OutDir>
     <IntDir>$(Configuration).x64\</IntDir>
   </PropertyGroup>
