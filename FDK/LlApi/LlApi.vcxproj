@@ -31,34 +31,34 @@
     <SccProvider>
     </SccProvider>
     <ProjectName>LlApi</ProjectName>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -124,7 +124,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>LlApi.def</ModuleDefinitionFile>
-      <AdditionalDependencies>Ws2_32.lib;SoftFX.Lrp.x86.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Ws2_32.lib;FDK.Lrp.x86.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Profile>false</Profile>
       <AdditionalLibraryDirectories>..\..\External\Lib</AdditionalLibraryDirectories>
     </Link>
@@ -154,7 +154,7 @@ copy /Y "$(OutDir)$(TargetName).pdb" ..\..\FRE\
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>LlApi.def</ModuleDefinitionFile>
-      <AdditionalDependencies>Ws2_32.lib;SoftFX.Lrp.x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Ws2_32.lib;FDK.Lrp.x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Profile>false</Profile>
       <AdditionalLibraryDirectories>..\..\External\Lib</AdditionalLibraryDirectories>
     </Link>
@@ -185,7 +185,7 @@ copy /Y "$(OutDir)$(TargetName).pdb" ..\..\FRE\
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>LlApi.def</ModuleDefinitionFile>
-      <AdditionalDependencies>Ws2_32.lib;SoftFX.Lrp.x86.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Ws2_32.lib;FDK.Lrp.x86.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Profile>false</Profile>
       <AdditionalLibraryDirectories>..\..\External\Lib</AdditionalLibraryDirectories>
     </Link>
@@ -216,7 +216,7 @@ copy /Y "$(OutDir)$(TargetName).pdb" ..\..\FRE\
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>LlApi.def</ModuleDefinitionFile>
-      <AdditionalDependencies>Ws2_32.lib;SoftFX.Lrp.x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Ws2_32.lib;FDK.Lrp.x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Profile>false</Profile>
       <AdditionalLibraryDirectories>..\..\External\Lib</AdditionalLibraryDirectories>
     </Link>
