@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Codec.Console</RootNamespace>
     <AssemblyName>Codec.Console</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -56,9 +56,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SoftFX.Lrp">
+    <Reference Include="FDK.Lrp">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\External\Dll\SoftFX.Lrp.dll</HintPath>
+      <HintPath>..\..\External\Dll\FDK.Lrp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />

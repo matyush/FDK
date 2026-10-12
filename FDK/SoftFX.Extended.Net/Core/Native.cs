@@ -92,8 +92,8 @@ namespace SoftFX.Extended.Core
 
         static void Construct()
         {
-            LrpClient = CreateLocalClient(Signature.Value, "SoftFX.LlApi.");
-            LrpLlCommonClient = CreateLocalClient(Financial.Generated.Signature.Value, "SoftFX.LlCommon.");
+            LrpClient = CreateLocalClient(Signature.Value, "FDK.LlApi.");
+            LrpLlCommonClient = CreateLocalClient(Financial.Generated.Signature.Value, "FDK.LlCommon.");
 
             Serializer = new Financial.Generated.Serializer(LrpLlCommonClient);
 

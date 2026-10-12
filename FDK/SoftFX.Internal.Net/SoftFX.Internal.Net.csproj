@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SoftFX.Internal</RootNamespace>
     <AssemblyName>SoftFX.Internal.Net</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -54,9 +54,9 @@
     <AssemblyOriginatorKeyFile>Resources\FDK.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SoftFX.Lrp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="FDK.Lrp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\External\Dll\SoftFX.Lrp.dll</HintPath>
+      <HintPath>..\..\External\Dll\FDK.Lrp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

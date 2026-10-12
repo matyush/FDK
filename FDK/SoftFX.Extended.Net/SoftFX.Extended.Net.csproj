@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SoftFX.Extended</RootNamespace>
     <AssemblyName>SoftFX.Extended.Net</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <!-- <SccProjectName>Svn</SccProjectName>
     <SccLocalPath>Svn</SccLocalPath>
@@ -62,8 +62,8 @@
     <AssemblyOriginatorKeyFile>Resources\FDK.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SoftFX.Lrp">
-      <HintPath>..\..\External\Dll\SoftFX.Lrp.dll</HintPath>
+    <Reference Include="FDK.Lrp">
+      <HintPath>..\..\External\Dll\FDK.Lrp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -346,9 +346,9 @@
 "$(SolutionDir)\..\External\bin\lrp.exe" "$(SolutionDir)\LlCommon.xml" "$(ProjectDir)\Financial\Generated"  /language:C# /side:client /mode:local /namespace:SoftFX.Extended.Financial.Generated
 
 ..\..\Tools\7z\7z a -r ..\..\External\Archives\AnyCPU.zip ..\..\External\Assembly\*.dll
-..\..\Tools\7z\7z a ..\..\External\Archives\AnyCPU.zip ..\..\External\Dll\SoftFX.Lrp.dll
-..\..\Tools\7z\7z a ..\..\External\Archives\x32.zip ..\..\External\Dll\SoftFX.Lrp.x86.dll
-..\..\Tools\7z\7z a ..\..\External\Archives\x64.zip ..\..\External\Dll\SoftFX.Lrp.x64.dll
+..\..\Tools\7z\7z a ..\..\External\Archives\AnyCPU.zip ..\..\External\Dll\FDK.Lrp.dll
+..\..\Tools\7z\7z a ..\..\External\Archives\x32.zip ..\..\External\Dll\FDK.LRP.x86.dll
+..\..\Tools\7z\7z a ..\..\External\Archives\x64.zip ..\..\External\Dll\FDK.LRP.x64.dll
 ..\..\Tools\7z\7z a ..\..\External\Archives\x32.zip ..\..\External\Dll\libeay32.dll
 ..\..\Tools\7z\7z a ..\..\External\Archives\x64.zip ..\..\External\Dll\libeay64.dll
 ..\..\Tools\7z\7z a ..\..\External\Archives\x32.zip ..\..\External\Dll\ssleay32.dll

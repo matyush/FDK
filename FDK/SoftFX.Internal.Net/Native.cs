@@ -10,8 +10,8 @@
 
         static Native()
         {
-            FixProvider = CreateLocalClient("SoftFX.FixProvider.", Generated.FixProvider.Signature.Value);
-            LrpProvider = CreateLocalClient("SoftFX.LrpProvider.", Generated.LrpProvider.Signature.Value);
+            FixProvider = CreateLocalClient("FDK.FixProvider.", Generated.FixProvider.Signature.Value);
+            LrpProvider = CreateLocalClient("FDK.LrpProvider.", Generated.LrpProvider.Signature.Value);
         }
 
         #endregion
