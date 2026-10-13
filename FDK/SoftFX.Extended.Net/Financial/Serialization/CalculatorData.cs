@@ -22,6 +22,7 @@
             this.Currencies = new List<string>();
         }
 
+#if NETFRAMEWORK
         internal CalculatorData(FinancialCalculator calculator)
             : this()
         {
@@ -71,6 +72,7 @@
 
             return result;
         }
+#endif // NETFRAMEWORK
 
         /// <summary>
         /// For internal usage only

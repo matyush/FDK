@@ -63,7 +63,9 @@ namespace SoftFX.Extended.Core
 
             if (ManagedLibrary.ResolveDotNetAssemblies)
             {
+#if NETFRAMEWORK
                 AppDomain.CurrentDomain.ReflectionOnlyAssemblyResolve += OnAssemblyResolve;
+#endif // NETFRAMEWORK
                 AppDomain.CurrentDomain.AssemblyResolve += OnAssemblyResolve;
             }
 

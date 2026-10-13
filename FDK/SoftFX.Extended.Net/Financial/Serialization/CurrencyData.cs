@@ -16,6 +16,7 @@
         {
         }
 
+#if NETFRAMEWORK
         internal CurrencyData(CurrencyEntry entry)
         {
             if (entry == null)
@@ -31,6 +32,7 @@
             var result = new CurrencyEntry(owner, this.Name, this.Precision, this.SortOrder);
             return result;
         }
+#endif // NETFRAMEWORK
 
         /// <summary>
         /// For internal usage only

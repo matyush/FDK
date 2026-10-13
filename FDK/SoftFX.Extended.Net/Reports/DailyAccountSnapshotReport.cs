@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
-using TickTrader.BusinessObjects;
 
 namespace SoftFX.Extended.Reports
 {

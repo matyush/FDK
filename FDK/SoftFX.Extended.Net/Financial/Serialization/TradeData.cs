@@ -16,6 +16,7 @@
         {
         }
 
+#if NETFRAMEWORK
         internal TradeData(TradeEntry entry)
         {
             if (entry == null)
@@ -63,6 +64,8 @@
 
             return result;
         }
+#endif // NETFRAMEWORK
+
         /// <summary>
         /// For internal usage only
         /// </summary>

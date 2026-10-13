@@ -106,6 +106,7 @@
             this.Client.DataFeedHandle.UnsubscribeQuotes(symbols, timeoutInMilliseconds);
         }
 
+#if NETFRAMEWORK
         /// <summary>
         /// The method gets history bars from the server.
         /// </summary>
@@ -119,6 +120,7 @@
         {
             return new Bars(this.Client, symbol, priceType, period, startTime, endTime);
         }
+#endif // NETFRAMEWORK
 
         /// <summary>
         /// The method gets history bars from the server.

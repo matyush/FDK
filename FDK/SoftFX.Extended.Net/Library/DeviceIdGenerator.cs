@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+#if NETFRAMEWORK
 using Microsoft.Win32;
+#endif // NETFRAMEWORK
 
 namespace SoftFX.Extended
 {
@@ -22,6 +24,7 @@ namespace SoftFX.Extended
         {
             if (string.IsNullOrEmpty(deviceId))
             {
+#if NETFRAMEWORK
                 try
                 {
                     deviceId = GetHash($"Product >> {ProductId()}\nBIOS >> {BiosId()}\nBASE >> {BaseId()}");
@@ -39,6 +42,7 @@ namespace SoftFX.Extended
 
                 if (deviceId != string.Empty)
                     return deviceId;
+#endif // NETFRAMEWORK
 
                 deviceId = Guid.NewGuid().ToString("D");
             }
@@ -76,6 +80,7 @@ namespace SoftFX.Extended
             return s;
         }
 
+#if NETFRAMEWORK
         #region Original Device ID Getting Code
 
         //Return a hardware identifier
@@ -227,5 +232,6 @@ namespace SoftFX.Extended
         }
 
         #endregion
+#endif // NETFRAMEWORK
     }
 }
