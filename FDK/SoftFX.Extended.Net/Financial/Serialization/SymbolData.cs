@@ -16,6 +16,7 @@
         {
         }
 
+#if NETFRAMEWORK
         internal SymbolData(SymbolEntry entry)
         {
             if (entry == null)
@@ -50,6 +51,7 @@
 
             return result;
         }
+#endif // NETFRAMEWORK
 
         /// <summary>
         /// For internal usage only

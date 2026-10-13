@@ -18,6 +18,7 @@
             this.Trades = new List<TradeData>();
         }
 
+#if NETFRAMEWORK
         internal AccountData(AccountEntry entry)
             : this()
         {
@@ -64,6 +65,7 @@
 
             return result;
         }
+#endif // NETFRAMEWORK
 
         /// <summary>
         /// For internal usage only

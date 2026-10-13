@@ -1,5 +1,7 @@
-﻿using System.Windows.Forms;
+﻿#if NETFRAMEWORK
+using System.Windows.Forms;
 using Microsoft.Win32;
+#endif // NETFRAMEWORK
 
 namespace SoftFX.Extended
 {
@@ -82,6 +84,12 @@ namespace SoftFX.Extended
 
         static Library()
         {
+#if !NETFRAMEWORK
+            // Zip entry names in the embedded module archives use the OEM code
+            // page; register the code pages provider before anything reads them.
+            System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+#endif
+
             Version = string.Empty;
             Id = string.Empty;
             Platform = string.Empty;
@@ -150,6 +158,7 @@ namespace SoftFX.Extended
         /// </summary>
         public static void CheckRedistPackages()
         {
+#if NETFRAMEWORK
             try
             {
                 RegistryKey runtime = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\DevDiv\vc\Servicing\14.0\RuntimeMinimum");
@@ -162,6 +171,7 @@ namespace SoftFX.Extended
                     System.Diagnostics.Process.Start("https://www.microsoft.com/en-us/download/details.aspx?id=48145");
                 System.Diagnostics.Process.GetCurrentProcess().Kill();
             }
+#endif // NETFRAMEWORK
         }
 
         /// <summary>

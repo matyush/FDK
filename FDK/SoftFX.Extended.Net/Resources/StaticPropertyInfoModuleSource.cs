@@ -6,6 +6,8 @@ namespace SoftFX.Extended.Resources
     using System.IO;
     using System.IO.Compression;
     using System.Reflection;
+    // Disambiguates from System.IO.Compression.ZipArchive on netstandard2.0.
+    using ZipArchive = SoftFX.Extended.Zip.ZipArchive;
 
     sealed class StaticPropertyInfoModuleSource : IModuleSource
     {
