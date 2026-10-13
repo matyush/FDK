@@ -1,4 +1,6 @@
-﻿namespace SoftFX.Lrp.Implementation
+﻿#if NETFRAMEWORK
+
+namespace SoftFX.Lrp.Implementation
 {
     using System;
     using System.Reflection;
@@ -49,3 +51,5 @@
         #endregion
     }
 }
+
+#endif // NETFRAMEWORK

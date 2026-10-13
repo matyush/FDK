@@ -1,4 +1,6 @@
-﻿namespace SoftFX.Lrp
+﻿#if NETFRAMEWORK
+
+namespace SoftFX.Lrp
 {
     using System;
     using SoftFX.Lrp.Implementation;
@@ -83,3 +85,5 @@
         #endregion
     }
 }
+
+#endif // NETFRAMEWORK
